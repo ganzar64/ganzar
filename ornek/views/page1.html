@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ITAGE Yazılım Danışmanlık Otomasyon Sanayi ve Ticaret </title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script defer src="scripts/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="scripts/bootstrap/bootstrap.bundle.min.js"></script>
+    <script  src="scripts/three.r95.min.js"></script>
+    <script  src="scripts/vanta.clouds.min.js"></script>
+    
+    <link href="styles/carousel.css" rel="stylesheet">
+    <link href="styles/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171088241-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171088241-1');
+</script>
+
+
+
+    <style media="screen">
+
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="bodydiv" class="container-fluid valign-center">
+
+      <div class="container maincontainer">
+        <div class="row p-3">
+          <div class="col-lg-4 all-center mb-5">            
+            <img src="images/itage_inspection_machines.png" class="img-fluid" width="80%"  alt="ITAGE Kalite Kontrol Makineleri">
+            <h2>ITAGE Kalite Kontrol Makineleri</h2>
+            <p>Hassas Ölçüm Makineleri, Ölçüm Kalite Kontrol Makineleri, Var-Yok Kontrol Makineleri, Uygunluk Testi Makineleri, Yarı Otomatik, Tam Otomatik, Bağımsız ve Hat üzerinde Çalışan Sistemler</p>
+            <a class="btn btn-secondary" href="inspectionmachines/index.html" role="button">Kalite Kontrol Makineleri »</a>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4 all-center mb-5">
+            <img src="images/industrial_image_processing.png" class="img-fluid" width="80%"  alt="ITAGE Endüstriyel Görüntü İşleme">
+            <h2>ITAGE Endüstriyel Görüntü İşleme</h2>
+            <p>Endüstriyel Kamera Sistemleri, Kameralı Ölçüm Modülü, Kameralı Kontrol Modülü, Pozisyon Kontrol, Yüzey Analizi, Çatlak, Kalite Kontrol, Hammadde Kontrol, Ara Ürün Kontrol, Kameralı Üretim Takip Sistemleri, Kameralı Barkod Okuma, Kameralı Uygunluk Testi</p>
+            <a class="btn btn-secondary" href="#" role="button">Endüstriyel Görüntü İşleme »</a>
+          </div><!-- /.col-lg-4 -->
+          
+          <div class="col-lg-4 all-center mb-5">
+            <img src="images/itage_coder.png" class="img-fluid" width="80%"  alt="ITAGE Yazılım ve Otomasyon">
+            <h2>ITAGE Yazılım ve Otomasyon</h2>
+            <p>Endüstriyel Veri Toplama, Üretim Veri Toplama, Otomasyon Yazılımları, IoT, PLC Programlama, Makine Yazılım Revizyonu, Web Uygulamaları, Endüstriyel Yazılım Geliştirme, ERP Entegrasyonları</p>
+            <a class="btn btn-secondary" href="softwarenautomation/index.html" role="button">Yazılım ve Otomasyon »</a>
+          </div><!-- /.col-lg-4 -->
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          //document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          //document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+
+<script defer>
+  VANTA.CLOUDS({
+    el: "#bodydiv",
+    mouseControls: true,
+    touchControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00
+  })
+  </script>
+
+  </body>
+</html>
