@@ -376,3 +376,6 @@ const getPageData = async function getPageData(pagename) {
 
 
 exports.app = functions.https.onRequest(app);
+
+
+console.log(" Merhaba Yusuf aBİ");
